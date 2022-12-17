@@ -7,7 +7,8 @@ const Movie = ({ data, loading }) => {
   }
   return (
     <Box className={classes.movie}>
-      <Box className={classes.movieCat}>Movie Category:</Box>
+      <Box className={classes.movieCat}>Movie Category:{data.data.Genre
+}</Box>
       <Box>
         <Flex
           color="white"
@@ -16,7 +17,7 @@ const Movie = ({ data, loading }) => {
           gap="10"
         >
           <Center w="300px" h="300px" bg="black" rounded="md">
-            <Text> data</Text>
+            <Text> {data.data.Title}</Text>
           </Center>
         </Flex>
       </Box>
