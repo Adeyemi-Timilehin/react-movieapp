@@ -1,0 +1,32 @@
+.button{
+    width: 77px;
+    height: 31px;
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    
+    color: #000000;
+    
+    
+  
+
+} 
+ .search{
+    position: absolute;
+  width: 90%;
+  left: 77px;
+  top: 751px;
+}
+
+@media only screen and (min-width : 320px) {
+    .search{
+        position: absolute;
+      width: 70%;
+      left: 70px;
+      top: 751px;
+    }
+   } 
+  
