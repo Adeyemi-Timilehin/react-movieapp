@@ -6,7 +6,7 @@ import { Header,Search,Movie } from "./myComponent";
 import axios from "axios";
 function App() {
   const [name, setName] = useState("");
-  const [submit, setSubmit] = useState("Black");
+  const [submit, setSubmit] = useState("");
   const [data, setData] = useState("");
   const [loading, setLoading] = useState(true);
   const fetch = useCallback(() => {

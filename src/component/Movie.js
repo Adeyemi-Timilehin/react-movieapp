@@ -1,10 +1,11 @@
 import { Flex, Center, Text, Box } from "@chakra-ui/react";
 import classes from "./Movie.module.css";
 const Movie = ({ data, loading }) => {
-  console.log(data);
+
   if (loading) {
     return <h1>Loading...</h1>;
   }
+  if (!data) return null;
   return (
     <Box className={classes.movie}>
       <Box className={classes.movieCat}>Movie Category:{data.data.Genre
