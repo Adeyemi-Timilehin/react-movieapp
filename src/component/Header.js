@@ -1,16 +1,16 @@
-import { Box,Text } from "@chakra-ui/react";
+import { Box,Text,Center  } from "@chakra-ui/react";
 import background from "../assets/img/rec.png"
-import classes from './Header.module.css'
+import { Image } from '@chakra-ui/react';
 const Header = () => {
     return(
         <>
-        <Box bg="gray.900" className={classes.rectangle} color="white" p={3}>
-          <Text fontSize="lg" className={classes.head}>MyTestApp</Text>
+        <Box bg="gray.900" color="white" p={3}>
+          <Text fontSize="xlg" >MyTestApp</Text>
         </Box>
       
-        <Box className={classes.article}>
-        <img  src={background} className={classes.picture} alt="background" w="100"/>
-        <Box className={classes.header}><Text className={classes.text}>Watch something incredible</Text ></Box>
+        <Box>
+        <Image boxSize="sm" objectFit='cover'  src={background}  alt="background" w="100%"/>
+        <Center pos="absolute" top={{ base:'170px', lg:'200px'}} left= {{ base: '50px', md: '200px', lg: '450px'   }} fontSize='2em' color="#fff" >Watch something incredible</Center>
         
           </Box>
 

@@ -1,5 +1,5 @@
 import { Flex, Center, Text, Box } from "@chakra-ui/react";
-import classes from "./Movie.module.css";
+
 const Movie = ({ data, loading }) => {
 
   if (loading) {
@@ -7,8 +7,8 @@ const Movie = ({ data, loading }) => {
   }
   if (!data) return null;
   return (
-    <Box className={classes.movie}>
-      <Box className={classes.movieCat}>Movie Category:{data.data.Genre
+    <Box maxW='sm' mt={[3, 8]}>
+      <Box>Movie Category:{data.data.Genre
 }</Box>
       <Box>
         <Flex
@@ -17,7 +17,7 @@ const Movie = ({ data, loading }) => {
           alignItems="flex-start"
           gap="10"
         >
-          <Center w="300px" h="300px" bg="black" rounded="md">
+          <Center w={{base:"150px",md:"300px",lg:"400px"}} h={{base:"150px"}} bg="black" rounded="md" mb={20}>
             <Text> {data.data.Title}</Text>
           </Center>
         </Flex>

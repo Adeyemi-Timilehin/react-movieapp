@@ -32,7 +32,7 @@ function App() {
 
   return (
 
-<Box>
+<Box mb={8}>
  
  <Header/>
 
