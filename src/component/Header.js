@@ -1,4 +1,4 @@
-import { Box,Text,Center  } from "@chakra-ui/react";
+import { Box,Text,AbsoluteCenter  } from "@chakra-ui/react";
 import background from "../assets/img/rec.png"
 import { Image } from '@chakra-ui/react';
 const Header = () => {
@@ -8,9 +8,10 @@ const Header = () => {
           <Text fontSize="xlg" >MyTestApp</Text>
         </Box>
       
-        <Box>
+        <Box position='relative'>
         <Image boxSize="sm" objectFit='cover'  src={background}  alt="background" w="100%"/>
-        <Center pos="absolute" top={{ base:'170px', lg:'200px'}} left= {{ base: '50px', md: '200px', lg: '450px'   }} fontSize='2em' color="#fff" >Watch something incredible</Center>
+
+        <AbsoluteCenter axis='both' fontSize={{base:"2em",lg:"3em"}} color="#fff" >Watch something incredible</AbsoluteCenter>
         
           </Box>
 
