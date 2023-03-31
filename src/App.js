@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useState, useEffect, useCallback } from "react";
-import {Box} from "@chakra-ui/react"
-import { Header,Search,Movie } from "./myComponent";
+import { Box } from "@chakra-ui/react";
+import { Header, Search, Movie } from "./myComponent";
 
 import axios from "axios";
 function App() {
@@ -31,18 +31,18 @@ function App() {
   }
 
   return (
+    <Box mb={24}>
+      <Header />
 
-<Box mb={8}>
- 
- <Header/>
-
-   <Box m={3} p={10}>
- <Search onhandleChange={onhandleChange} onhandleClick={onhandleClick} value={name}/>
- <Movie data={data} loading={loading}/>
- </Box>
- </Box>
-
- 
+      <Box m={3} p={10}>
+        <Search
+          onhandleChange={onhandleChange}
+          onhandleClick={onhandleClick}
+          value={name}
+        />
+        <Movie data={data} loading={loading} />
+      </Box>
+    </Box>
   );
 }
 
