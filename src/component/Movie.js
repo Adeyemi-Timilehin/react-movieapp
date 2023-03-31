@@ -5,7 +5,7 @@ return(
   <Box>
   {( loading)?<h1>Loading...</h1>:((data)&&<Box maxW="sm" mt={[3, 8]}>
   <Box>Movie Category:{data.data.Genre}</Box>
-  <Image src={data.data.Poster} alt={data.data.Title}/>
+  <Image src={data.data.Poster} alt={data.data.Title} boxSize="sm"/>
   {/* <Square
     size={{ base: "100px", lg: "300px" }}
     bg="purple.700"

@@ -33,7 +33,6 @@ function App() {
   return (
     <Box mb={24}>
       <Header />
-
       <Box m={3} p={10}>
         <Search
           onhandleChange={onhandleChange}
